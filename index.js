@@ -272,7 +272,7 @@ class ProjectManager extends Instructor {
     this.gradClassName = att3.gradClassName;
     this.favInstructor = att3.favInstructor;     
   }
-  standup(slackChannel){
+  standUp(slackChannel){
     return `${this.name} announces to ${slackChannel}, @channel standy times!`
   }
   debugsCode(student, subject){
@@ -294,9 +294,9 @@ const projectMng = new ProjectManager({
 
 console.log(projectMng);
 
-console.log(projectMng.standup("@Web36"));
+console.log(projectMng.standUp("@Web36"));
 
-console.log(projectMng.debugsCode(me, "HTML"));
+console.log(projectMng.debugsCode(me, me.favSubjects[0]));
 
 /*
   STRETCH PROBLEM (no tests!)
