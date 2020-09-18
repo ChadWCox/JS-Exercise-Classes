@@ -229,7 +229,7 @@ class Student extends Lambdasian {
   listSubjects(){
     return `Loving ${this.favSubjects[0]}, ${this.favSubjects[1]}, ${this.favSubjects[2]}`
   }
-  pRassignment(subject){
+  PRAssignment(subject){
     return `${this.name} has submitted a PR for ${subject}`
   }
   sprintChallenge(subject){
@@ -249,7 +249,7 @@ console.log(me);
 
 console.log(me.listSubjects());
 
-console.log(me.pRassignment(me.favSubjects[0]));
+console.log(me.PRAssignment(me.favSubjects[0]));
 
 console.log(me.sprintChallenge(me.favSubjects[2]));
 
