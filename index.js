@@ -280,7 +280,7 @@ class ProjectManager extends Instructor {
   }
 }
 
-const pm = new ProjectManager({
+const projectMng = new ProjectManager({
   name:'Brit',
   age: 30,
   location: 'Canada',
@@ -292,11 +292,11 @@ const pm = new ProjectManager({
   favInstructor: 'Josh Knell',
 });
 
-console.log(pm);
+console.log(projectMng);
 
-console.log(pm.standup("@Web36"));
+console.log(projectMng.standup("@Web36"));
 
-console.log(pm.debugsCode(me, me.favSubjects[0]));
+console.log(projectMng.debugsCode(me, "HTML"));
 
 /*
   STRETCH PROBLEM (no tests!)
